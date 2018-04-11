@@ -1,0 +1,40 @@
+﻿# My configurations:
+.svn/
+/WebRoot/WEB-INF/classes/
+/WebRoot/apcd.buildNO
+.classpath
+.settings/
+license.lic
+*.gzcss
+*.gzjs
+
+#空文件夹要特殊处理，1、初次提交，空文件夹下加.gitkeep文件 2、push完毕更新.gitignore,添加如下行
+/dist/
+/target/
+/WebApp/pages/upLoadCache/card/
+/WebApp/pages/upLoadCache/caTmp/
+/WebApp/pages/upLoadCache/doc/
+/WebApp/pages/upLoadCache/gpy/
+/WebApp/pages/upLoadCache/QRCode/
+/WebApp/pageOffice_temp/
+
+# git默认不管理exe文件，需要特殊处理
+!*.exe
+
+
+*.class
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.metadata/
