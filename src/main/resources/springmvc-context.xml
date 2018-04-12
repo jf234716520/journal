@@ -18,8 +18,8 @@
     <!-- 这个类用于Spring MVC视图解析 -->
     <beans:bean id="viewResolver"
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <beans:property name="prefix" value="/" />
-        <beans:property name="suffix" value=".jsp" />
+        <beans:property name="prefix" value="/pages/" />
+        <beans:property name="suffix" value=".html" />
     </beans:bean>
 
 </beans:beans>

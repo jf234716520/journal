@@ -7,7 +7,7 @@
 license.lic
 *.gzcss
 *.gzjs
-
+bin
 #空文件夹要特殊处理，1、初次提交，空文件夹下加.gitkeep文件 2、push完毕更新.gitignore,添加如下行
 /dist/
 /target/
