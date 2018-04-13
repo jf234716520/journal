@@ -7,4 +7,6 @@ import com.easy.journal.common.model.User;
 public interface UserMapper {
 	
 	public User getUserByUUID(String uuid);
+
+	public void insert(User user);
 }
