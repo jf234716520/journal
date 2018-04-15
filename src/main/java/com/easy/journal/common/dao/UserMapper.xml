@@ -8,7 +8,7 @@
         select uuid,name,password from users where uuid =#{uuid}  
     </select>    
     
-    <insert id="insert" parameterType="string">
+    <insert id="insert" parameterType="com.easy.journal.common.model.User">
     	insert into users (uuid,name,password) values (#{uuid},#{name},#{password})
     </insert>
 </mapper> 

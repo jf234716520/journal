@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE mapper    
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.easy.journal.common.dao.JournalMapper">  
+
+    <select id="getUserByUUID" resultType="com.easy.journal.common.model.Journal">  
+        select * from  journal where creatoruuid = #{creatoruuid} and belongweek = #{belongweek} 
+    </select>    
+    
+    <insert id="insert" parameterType="com.easy.journal.common.model.Journal">
+    	insert into journal (uuid,belongweek,creatoruuid) values (#{uuid},#{belongweek},#{creatoruuid})
+    </insert>
+</mapper> 

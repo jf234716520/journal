@@ -7,6 +7,8 @@ public class User {
 	private String name;
 	
 	private String password;
+	
+	private String position;
 
 	public String getUuid() {
 		return uuid;
@@ -31,6 +33,15 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public String getPosition() {
+		return position;
+	}
+
+	public void setPosition(String position) {
+		this.position = position;
+	}
+
 	
 	
 }
